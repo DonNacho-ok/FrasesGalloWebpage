@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'fuente-propia';
+    src: url('../fonts/MHeiSung-PRC-UltraBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-image: url("../images/cerro\ colores.jpg");
+}
+
+#barber_div{
+    width: 700px;
+    height: 400px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: repeating-linear-gradient(
+    45deg,
+    #606dbc,
+    #606dbc 10px,
+    #465298 10px,
+    #465298 20px
+    );
+    background-size: 200% 200%;
+    animation: barberpole 10s linear infinite;
+}
+
+@keyframes barberpole {
+    100% {
+      background-position: 100% 100%;
+    }
+  }
+
+#frases_div{
+    font-family: 'fuente-propia';
+    padding-top: 15%;
+}
+
+.texto{
+    color: #f6f224;
+}
+
+#gallo{
+    position: relative;
+    left: 65%;
+    transform: translate(-10%, 70%);
+}
