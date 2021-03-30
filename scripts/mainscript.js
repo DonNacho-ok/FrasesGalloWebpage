@@ -24,6 +24,7 @@ const ListaFrases = [
 // 7 frases hasta ahoora, rango 0-6
 
 $(function(){
+    RotadorFrases();
     window.setInterval(RotadorFrases, 5000)
 });
 
