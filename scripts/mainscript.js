@@ -24,6 +24,8 @@ const ListaFrases = [
 // 7 frases hasta ahoora, rango 0-6
 
 $(function(){
+    var volume_control = document.getElementById('audio_player');
+    volume_control.volume = 0.70;
     RotadorFrases();
     window.setInterval(RotadorFrases, 5000)
 });
