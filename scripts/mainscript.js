@@ -32,12 +32,7 @@ $(function(){
 
 function RotadorFrases(){
     $('#main_text').fadeOut('slow', function(){
-        $('#main_text').text(ListaFrases[RandomNum()]);
+        $('#main_text').text(ListaFrases[Math.floor(Math.random()*6)]);
         $('#main_text').fadeIn('slow')
     });
-};
-
-function RandomNum(){
-    var numero = Math.floor(Math.random() * 6)
-    return numero;
 };
