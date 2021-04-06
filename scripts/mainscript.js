@@ -18,10 +18,12 @@ const ListaFrases = [
     NO QUERE UN TRAPITO 
     PA TU VAGINA?`,
     `CHAAAAAAAAAAAAAAAAA
-    ERRALE UNA BALITA`
+    ERRALE UNA BALITA`,
+    `HACETE CAVÁ' EL HOYO
+    POR UN BURRO`
 ];
 
-// 7 frases hasta ahoora, rango 0-6
+// 8 frases hasta ahoora, rango 0-7
 
 $(function(){
     var volume_control = document.getElementById('audio_player');
@@ -32,7 +34,7 @@ $(function(){
 
 function RotadorFrases(){
     $('#main_text').fadeOut('slow', function(){
-        $('#main_text').text(ListaFrases[Math.floor(Math.random()*6)]);
+        $('#main_text').text(ListaFrases[Math.floor(Math.random()*7)]);
         $('#main_text').fadeIn('slow')
     });
 };
